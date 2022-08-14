@@ -1,0 +1,45 @@
+Source: https://twitter.com/e11i0t_4lders0n/status/1501042053593329668
+Source: Shodan Dorks for Finding Sensitive  Data:
+    "MongoDB Server Information" port:27017 -authentication
+    "Set-Cookie: mongo-express=" "200 OK"
+    mysql port:"3306"
+    port:"9200" all:"elastic indices"
+    port:5432 PostgreSQL
+    proftpd port:21
+    "220" "230 Login successful." port:21
+    openssh port:22
+    port:"23"
+    port:"25" product:"exim"
+    port:"11211" product:"Memcached"
+    "X-Jenkins" "Set-Cookie: JSESSIONID" http.title:"Dashboard"
+    "port: 53" Recursion: Enabled
+    port:8291 os:"MikroTik RouterOS 6.45.9"
+    product:"Apache httpd" port:"80"
+    product:"Microsoft IIS httpd"
+    product:"nginx"
+    "port: 8080" product:"nginx"
+    "authentication disabled" "RFB 003.008"
+    "Authentication: disabled" port:445
+    "X-Plex-Protocol" "200 OK" port:32400
+    "220" "230 Login successful." port:21
+
+Source: https://jauntygoat.net/@nat
+Source: Fun Shodan Dorks
+    "WARNING: administrative password is not configured." port:23
+    "valetudo MQTT Connection Code: 0"
+    "Server: Solar-Log"
+    "ESP8266"
+    "Server: SOLAR controls product server"
+
+Source: https://kb.offsec.nl/tools/osint/shodan/
+    # Chromecasts / Smart TVs
+        "Chromecast:" port:8008
+    # Microsoft RDP
+        "\x03\x00\x00\x0b\x06\xd0\x00\x00\x124\x00"
+        \x03\x00\x00\x13\x0e\xd0\x00\x00\x124\x00\x03\x00\x08\x00\x02\x00\x00\x00
+    # Open surveilance cameras (user: admin without password)
+        NETSurveillance uc-httpd
+    # VNC-servers
+        "authentication disabled" "RFB 003.008"
+        "authentication disabled" port:5900,5901
+    
